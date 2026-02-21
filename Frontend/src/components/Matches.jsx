@@ -6,95 +6,86 @@ import { MatchesMap } from './MapComponent.jsx'
 const INITIAL_MATCHES = [
   {
     id: 1,
-    name: 'TechFlow Solutions',
-    loc: 'San Francisco, CA',
-    buyerId: 'BYR-10291',
+    name: 'Wipro Enterprise Solutions',
+    loc: 'Hyderabad, Telangana',
+    buyerId: 'BYR-INR-10291',
     online: true,
-    emoji: '📦',
-    logoBg: '#EEF1FF',
-    date: 'Matched on Oct 24, 2023',
+    emoji: '🖥️',
+    logoBg: 'rgba(80,116,255,0.12)',
+    date: 'Matched on Jan 12, 2025',
     industries: [
-      { label: 'IT Software',  bg: '#EEF1FF', fg: '#3B5BF5' },
-      { label: 'FinTech',      bg: '#FEF3C7', fg: '#B45309' },
-      { label: 'SaaS',         bg: '#DCFCE7', fg: '#15803D' },
+      { label: 'IT Services',  bg: 'rgba(80,116,255,0.15)', fg: '#5074ff' },
+      { label: 'SaaS',         bg: 'rgba(22,197,248,0.12)', fg: '#16c5f8' },
+      { label: 'FinTech',      bg: 'rgba(245,158,11,0.15)', fg: '#F59E0B' },
     ],
-    lat: 37.7749, lng: -122.4194, pinColor: '#3B5BF5',
+    lat: 17.3850, lng: 78.4867, pinColor: '#5074ff',
   },
   {
     id: 2,
-    name: 'GreenLeaf Logistics',
-    loc: 'Austin, TX',
-    buyerId: 'BYR-30847',
+    name: 'Adani Logistics Ltd.',
+    loc: 'Ahmedabad, Gujarat',
+    buyerId: 'BYR-INR-30847',
     online: false,
-    emoji: '🌿',
-    logoBg: '#DCFCE7',
-    date: 'Matched on Oct 22, 2023',
+    emoji: '🚢',
+    logoBg: 'rgba(22,197,248,0.1)',
+    date: 'Matched on Jan 8, 2025',
     industries: [
-      { label: 'Supply Chain', bg: '#DCFCE7', fg: '#15803D' },
-      { label: 'AgriTech',     bg: '#FEF3C7', fg: '#B45309' },
+      { label: 'Port Logistics', bg: 'rgba(22,197,248,0.12)', fg: '#16c5f8' },
+      { label: 'Supply Chain',   bg: 'rgba(34,197,94,0.12)', fg: '#22C55E' },
     ],
-    lat: 30.2672, lng: -97.7431, pinColor: '#22C55E',
+    lat: 23.0225, lng: 72.5714, pinColor: '#22C55E',
   },
   {
     id: 3,
-    name: 'Quantum Dynamics',
-    loc: 'London, UK',
-    buyerId: 'BYR-55102',
+    name: 'Bajaj Auto Exports',
+    loc: 'Pune, Maharashtra',
+    buyerId: 'BYR-INR-55102',
     online: true,
-    emoji: '🤖',
-    logoBg: '#FEF3C7',
-    date: 'Matched on Oct 20, 2023',
+    emoji: '🏍️',
+    logoBg: 'rgba(245,158,11,0.1)',
+    date: 'Matched on Jan 5, 2025',
     industries: [
-      { label: 'Machinery',     bg: '#FEF3C7', fg: '#B45309' },
-      { label: 'Engineering',   bg: '#EDE9FE', fg: '#6D28D9' },
-      { label: 'AI & Robotics', bg: '#EEF1FF', fg: '#3B5BF5' },
+      { label: 'Automotive',  bg: 'rgba(245,158,11,0.15)', fg: '#F59E0B' },
+      { label: 'Engineering', bg: 'rgba(139,92,246,0.15)', fg: '#8B5CF6' },
     ],
-    lat: 51.5074, lng: -0.1278, pinColor: '#F59E0B',
+    lat: 18.5204, lng: 73.8567, pinColor: '#F59E0B',
   },
   {
     id: 4,
-    name: 'Vitality Health Systems',
-    loc: 'Boston, MA',
-    buyerId: 'BYR-77430',
+    name: 'Dr. Reddy\'s Pharma',
+    loc: 'Hyderabad, Telangana',
+    buyerId: 'BYR-INR-77430',
     online: false,
-    emoji: '💊',
-    logoBg: '#FCE7F3',
-    date: 'Matched on Oct 19, 2023',
+    emoji: '💉',
+    logoBg: 'rgba(236,72,153,0.1)',
+    date: 'Matched on Dec 28, 2024',
     industries: [
-      { label: 'Medical Devices', bg: '#FCE7F3', fg: '#BE185D' },
-      { label: 'BioTech',         bg: '#DCFCE7', fg: '#15803D' },
+      { label: 'Pharmaceuticals', bg: 'rgba(236,72,153,0.15)', fg: '#EC4899' },
+      { label: 'BioTech',         bg: 'rgba(34,197,94,0.12)', fg: '#22C55E' },
     ],
-    lat: 42.3601, lng: -71.0589, pinColor: '#EF4444',
+    lat: 17.3850, lng: 78.4867, pinColor: '#EC4899',
   },
   {
     id: 5,
-    name: 'Nova Retail Group',
-    loc: 'New York, NY',
-    buyerId: 'BYR-62019',
+    name: 'Godrej Consumer Products',
+    loc: 'Mumbai, Maharashtra',
+    buyerId: 'BYR-INR-62019',
     online: true,
-    emoji: '🚀',
-    logoBg: '#EDE9FE',
-    date: 'Matched on Oct 18, 2023',
+    emoji: '🛒',
+    logoBg: 'rgba(139,92,246,0.1)',
+    date: 'Matched on Dec 24, 2024',
     industries: [
-      { label: 'E-commerce',  bg: '#EDE9FE', fg: '#6D28D9' },
-      { label: 'Retail Tech', bg: '#FEE2E2', fg: '#B91C1C' },
-      { label: 'Textiles',    bg: '#FEF3C7', fg: '#B45309' },
+      { label: 'FMCG',        bg: 'rgba(139,92,246,0.15)', fg: '#8B5CF6' },
+      { label: 'Retail Tech', bg: 'rgba(80,116,255,0.15)', fg: '#5074ff' },
+      { label: 'Consumer',    bg: 'rgba(245,158,11,0.12)', fg: '#F59E0B' },
     ],
-    lat: 40.7128, lng: -74.006, pinColor: '#8B5CF6',
+    lat: 19.0760, lng: 72.8777, pinColor: '#8B5CF6',
   },
-]
-
-const PIN_COLORS = ['#3B5BF5', '#22C55E', '#F59E0B', '#EF4444', '#8B5CF6', '#EC4899', '#06B6D4']
-const LOGO_BGS   = ['#EEF1FF', '#DCFCE7', '#FEF3C7', '#FCE7F3', '#EDE9FE']
-const IND_COLORS = [
-  { bg: '#EEF1FF', fg: '#3B5BF5' }, { bg: '#DCFCE7', fg: '#15803D' },
-  { bg: '#FEF3C7', fg: '#B45309' }, { bg: '#EDE9FE', fg: '#6D28D9' },
-  { bg: '#FEE2E2', fg: '#B91C1C' }, { bg: '#FCE7F3', fg: '#BE185D' },
 ]
 
 let nextId = 100
 
-/* ── SVG helpers ── */
+/* SVG helpers */
 const PinIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="12" height="12">
     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
@@ -123,7 +114,6 @@ export default function Matches({ navigate, extraMatches = [] }) {
   const [removedIds, setRemovedIds] = useState(new Set())
   const [removing, setRemoving]     = useState(new Set())
 
-  // Displayed list = new matches from Discovery (prepended) + initial matches, minus removed
   const allMatches = [
     ...extraMatches.map(m => ({ ...m, isNew: true })),
     ...INITIAL_MATCHES,
@@ -137,16 +127,12 @@ export default function Matches({ navigate, extraMatches = [] }) {
     }, 420)
   }
 
-  // Pass lat, lng, and pinColor (as `color`) to MatchesMap
-  // MatchesMap uses these to:
-  //   1. Point-in-polygon detect the country and highlight it with `color`
-  //   2. Draw a dotted trade curve from Home → [lat, lng] in `color`
   const mapPartners = allMatches.map(m => ({
     name:     m.name,
     location: m.loc,
     lat:      m.lat,
     lng:      m.lng,
-    color:    m.pinColor,   // ← drives both country fill + curve color
+    color:    m.pinColor,
   }))
 
   return (
@@ -154,21 +140,21 @@ export default function Matches({ navigate, extraMatches = [] }) {
       <Sidebar
         activeItem="matches"
         navigate={navigate}
-        variant="matches"
         matchBadge={allMatches.length}
       />
 
       <div className="main-area">
         <Topbar
           placeholder="Search companies, people, industries..."
-          userName="Alex Johnson"
-          userRole="Business Analyst"
-          avatarText="AJ"
-          avatarStyle={{ background: 'linear-gradient(135deg,#F59E0B,#EF4444)' }}
+          userName="Priya Sharma"
+          userRole="Business Development Lead"
+          avatarText="PS"
+          avatarStyle={{ background: 'linear-gradient(135deg,#EC4899,#5074ff)' }}
+          navigate={navigate}
         />
 
         <div className="matches-body">
-          {/* ── LEFT: Match list ── */}
+          {/* LEFT: Match list */}
           <div className="matches-left">
             <div className="matches-header">
               <div>
@@ -213,24 +199,24 @@ export default function Matches({ navigate, extraMatches = [] }) {
                 <div
                   key={m.id}
                   className={`match-item${removing.has(m.id) ? ' removing' : ''}${m.isNew ? ' new-match' : ''}`}
-                  style={m.isNew ? { animation: 'slideIn 0.4s ease', border: '2px solid var(--blue)' } : {}}
+                  style={m.isNew ? { animation: 'slideIn 0.4s ease', borderColor: 'rgba(22,197,248,0.4)' } : {}}
                 >
                   <div className="match-logo" style={{ background: m.logoBg, fontSize: 24 }}>
-                    {m.emoji}
+                    <span className="match-emoji">{m.emoji}</span>
                     <div className={`online-dot ${m.online ? 'online' : 'offline'}`} />
                   </div>
 
                   <div className="match-info">
                     <div className="match-name">
                       {m.name}
-                      <span style={{ color: 'var(--gray-400)', fontSize: 12, fontWeight: 400, display: 'flex', alignItems: 'center', gap: 3 }}>
+                      <span style={{ color: 'var(--text-muted)', fontSize: 12, fontWeight: 400, display: 'flex', alignItems: 'center', gap: 3 }}>
                         · <PinIcon /> {m.loc}
                       </span>
                     </div>
-                    <div style={{ fontSize: 11.5, color: 'var(--gray-400)', marginTop: 2, display: 'flex', alignItems: 'center', gap: 4 }}>
+                    <div style={{ fontSize: 11.5, color: 'var(--text-muted)', marginTop: 2, display: 'flex', alignItems: 'center', gap: 4 }}>
                       <CardIcon />
                       Buyer ID:{' '}
-                      <span style={{ fontWeight: 600, color: 'var(--navy)', fontFamily: 'monospace' }}>
+                      <span style={{ fontWeight: 600, color: 'var(--accent)', fontFamily: 'monospace' }}>
                         {m.buyerId}
                       </span>
                     </div>
@@ -239,7 +225,7 @@ export default function Matches({ navigate, extraMatches = [] }) {
                         <span
                           key={i}
                           className="match-ind-tag"
-                          style={{ background: ind.bg, color: ind.fg }}
+                          style={{ background: ind.bg, color: ind.fg, border: `1px solid ${ind.fg}33` }}
                         >
                           {ind.label}
                         </span>
@@ -274,21 +260,19 @@ export default function Matches({ navigate, extraMatches = [] }) {
             </div>
           </div>
 
-          {/* ── RIGHT: Map panel ── */}
+          {/* RIGHT: Map panel */}
           <div className="matches-right">
             <h3>Partner Locations</h3>
             <p className="map-sub">Geographic distribution of your matches</p>
 
-            {/* Trade route map */}
             <div style={{ marginBottom: 20 }}>
               <MatchesMap partners={mapPartners} />
             </div>
 
-            {/* Partner list */}
             <div className="match-pins">
               {allMatches.map(m => (
                 <div key={m.id} className="match-pin">
-                  <div className="pin-dot" style={{ background: m.pinColor }} />
+                  <div className="pin-dot" style={{ background: m.pinColor, boxShadow: `0 0 8px ${m.pinColor}88` }} />
                   <div className="pin-info">
                     <div className="pin-name">{m.name}</div>
                     <div className="pin-loc">📍 {m.loc}</div>
@@ -299,9 +283,9 @@ export default function Matches({ navigate, extraMatches = [] }) {
 
             <div className="region-legend">
               <div className="leg-title">By Region</div>
-              <div className="leg-item"><div className="leg-dot" style={{ background: '#3B5BF5' }} />North America (4)</div>
-              <div className="leg-item"><div className="leg-dot" style={{ background: '#F59E0B' }} />Europe (1)</div>
-              <div className="leg-item"><div className="leg-dot" style={{ background: '#22C55E' }} />Asia Pacific (0)</div>
+              <div className="leg-item"><div className="leg-dot" style={{ background: '#5074ff' }} />South India (2)</div>
+              <div className="leg-item"><div className="leg-dot" style={{ background: '#22C55E' }} />West India (3)</div>
+              <div className="leg-item"><div className="leg-dot" style={{ background: '#F59E0B' }} />International (0)</div>
             </div>
           </div>
         </div>
